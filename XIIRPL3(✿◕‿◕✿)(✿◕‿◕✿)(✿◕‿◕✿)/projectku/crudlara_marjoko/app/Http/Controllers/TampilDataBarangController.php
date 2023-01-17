@@ -13,7 +13,7 @@ class TampilDataBarangController extends Controller
      */
     public function index()
     {
-        //
+        return view('tampildatabarang');
     }
 
     /**

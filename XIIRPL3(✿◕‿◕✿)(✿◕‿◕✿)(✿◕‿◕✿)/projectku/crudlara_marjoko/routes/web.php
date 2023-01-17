@@ -7,8 +7,8 @@ use App\Http\Controllers\HapusDataBarangController;
 use App\Http\Controllers\PerbaruiDataBarangController;
 
 Route::get('/',[DashboardController::class,'index']);
-Route::get('/tambahdatabarang',[TambahDataBarangController::class,'index']);
-Route::get('/tampildatabarang',[TampilDataBarangController::class,'index']);
-Route::get('/hapusdatabarang',[HapusDataBarangController::class,'index']);
-Route::get('/perbaruidatabarang',[PerbaruiDataBarangController::class,'index']);
+Route::get('/tambah',[TambahDataBarangController::class,'index']);
+Route::get('/tampil',[TampilDataBarangController::class,'index']);
+Route::get('/hapus',[HapusDataBarangController::class,'index']);
+Route::get('/perbarui',[PerbaruiDataBarangController::class,'index']);
 
