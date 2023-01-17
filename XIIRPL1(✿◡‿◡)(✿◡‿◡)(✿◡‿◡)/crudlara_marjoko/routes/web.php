@@ -1,18 +1,14 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\TambahDataBarangController;
+use App\Http\Controllers\LihatDataBarangController;
+use App\Http\Controllers\HapusDataBarangController;
+use App\Http\Controllers\PerbaruiDataBarangController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[DashboardController::class,'index']);
+Route::get('/tambah',[TambahDataBarangController::class,'index']);
+Route::get('/lihat',[LihatDataBarangController::class,'index']);
+Route::get('/hapus',[HapusDataBarangController::class,'index']);
+Route::get('/perbarui',[PerbaruiDataBarangController::class,'index']);
