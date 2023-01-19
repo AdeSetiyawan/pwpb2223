@@ -7,12 +7,14 @@
     <title>@yield('namamu')</title>
 </head>
 <body>
-    ini bagian atas (link)
+    <!-- basic url -   {{ url ('/') }} -->
+    <a href="{{ url ('/') }}">Dashboard</a> | 
+    <a href="{{ url ('/tambah') }}">Tambah Data Barang</a>
     <hr>
     <!-- isinya  -->
     @yield('isi')
     <hr>
     copyright &copy 2023 Design By Michel
-
+    
 </body>
 </html>

@@ -3,6 +3,9 @@
 <!-- kode dasar / basic untuk pengisian value 1 kalimat @section('namayield','value yang mau diberikan') -->
 
 @section ('isi')
+
+    
+
     <h1>
         Tambah Data Barang Marjoko
     </h1>
