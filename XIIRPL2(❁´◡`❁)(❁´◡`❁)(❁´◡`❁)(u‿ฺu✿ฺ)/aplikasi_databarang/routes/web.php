@@ -12,6 +12,3 @@ Route::get('/tambah',[TambahDataController::class,'index']);
 Route::get('/tampil',[TampilDataController::class,'index']);
 Route::get('/hapus',[HapusDataController::class,'index']);
 Route::get('/perbarui',[PerbaruiDataController::class,'index']);
-
-Route::post('/send',[HomeController::class,'store']);
-Route::get('/hapus/{id}',[HomeController::class,'destroy']);

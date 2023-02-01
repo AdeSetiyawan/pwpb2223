@@ -13,7 +13,7 @@ class TambahDataController extends Controller
      */
     public function index()
     {
-        //
+        return view('tambahdata');
     }
 
     /**
